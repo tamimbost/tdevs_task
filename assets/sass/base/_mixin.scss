@@ -1,0 +1,76 @@
+@mixin td__screen-1499 {
+  @media (max-width: 1499px) {
+    @content;
+  }
+}
+
+@mixin td__screen-1399 {
+  @media (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin td__screen-1299 {
+  @media (max-width: 1299px) {
+    @content;
+  }
+}
+
+@mixin td__screen-1199 {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin td__screen-1099 {
+  @media (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin td__screen-991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin td__screen-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin td__screen-575 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin td__screen-439{
+  @media (max-width:439px){
+    @content;
+  }
+}
+
+// Extar Media For Arrow Responsive Swiper Slide
+@mixin td__screen-1824{
+  @media (max-width:1825px){
+    @content;
+  }
+}
+@mixin td__screen-1745{
+  @media (max-width:1745px){
+    @content;
+  }
+}
+@mixin td__screen-1650{
+  @media (max-width:1650px){
+    @content;
+  }
+}
+@mixin td__screen-1550{
+  @media (max-width:1550px){
+    @content;
+  }
+}
+// End Media For Arrow Responsive Swiper Slide

@@ -1,0 +1,197 @@
+// Start Full Mobile Menu Sitebar
+.td__mobile-menu {
+  background-color: $td__secondary-color;
+  padding: 30px 30px;
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  z-index: 9999;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  transition: 0.3s ease-in;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2), 8px 0 30px rgba(0, 0, 0, 0.15);
+  &.td__mobile-menu-active {
+    right: 0;
+  }
+  @include td__screen-439{
+    width: 310px;
+  }
+}
+// End Full Mobile Menu Sitebar
+
+// Start Mobile Menu Icon Click Rotate
+.rotate {
+  rotate: (-90deg);
+}
+// End Mobile Menu Icon Click Rotate
+
+
+// Start Mobile Menu Social Media
+.td__mobile-menu-social-media {
+  margin-top: 30px;
+  margin-left: 20px;
+  h4 {
+    color: $td__white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      a {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        line-height: 32px;
+        display: inline-block;
+        text-align: center;
+        background-color: $td__white;
+        transition: linear 0.3s;
+        i {
+          color: $td__secondary-color;
+          transition: linear 0.3s;
+        }
+        &:hover {
+          background-color: $td__primary-color;
+          i {
+            color: $td__secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+// End Mobile Menu Social Media
+
+
+// Start Mobile Menu Logo
+.td__mobile-menu-logo {
+  margin-bottom: 20px;
+  a {
+    img {
+      margin: auto;
+    }
+  }
+}
+// End Mobile Menu Logo
+
+// Start Mobile Menu
+.td__mobile-menu-wrapper {
+  a {
+    font-size: 16px;
+    font-weight: 600;
+    color: $td__white;
+  }
+  ul {
+    .td__mobile-sub-menu-inner {
+      margin-bottom: 5px;
+      padding: 15px;
+      transition: linear 0.3s;
+      a {
+        position: relative;
+        display: block;
+        transition: linear 0.3s;
+        color: $td__white;
+        i {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: linear 0.3s;
+        }
+        &:hover {
+          color: $td__primary-color;
+          i {
+            color: $td__primary-color;
+          }
+        }
+      }
+      .td__mobile-sub-menu {
+        margin-left: 20px;
+        margin-top: 16px;
+        display: none;
+        li {
+          margin-bottom: 10px;
+          a {
+            display: inline;
+            transition: linear 0.3s;
+            &:hover {
+              color: $td__primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Mobile Menu
+
+
+// Start Mobile Menu Close Button
+.td__mobile-menu-close-btn {
+  a {
+    width: 40px;
+    height: 40px;
+    background-color: $td__white;
+    color: $td__secondary-color;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: linear 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    &:hover {
+      background-color: $td__primary-color;
+      color: $td__secondary-color
+    }
+  }
+}
+// End Mobile Menu Close Button
+
+// Start Body Overlay
+/* Style for the light overlay */
+.td__overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1819189c; /* Light overlay */
+  z-index: 999; /* Ensure it stays above the content */
+  transition: 0.3s ease;
+}
+.td__overlay:hover {
+  cursor: url("../images/icon/cursor-close.svg"), pointer;
+}
+/* When overlay is active */
+.td__overlay.active {
+  display: block;
+  /* Show overlay */
+}
+
+/* Prevent body scrolling when overlay is active */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Adjust z-index for the mobile menu to ensure it's on top of the overlay */
+.td__mobile-menu-active {
+  z-index: 1000; /* Mobile menu above overlay */
+}
+
+/* Ensure mobile menu is above overlay */
+.td__mobile-menu {
+  z-index: 1001;
+}
+
+// End Body Overlay

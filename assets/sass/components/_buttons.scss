@@ -1,0 +1,65 @@
+// Start Primary Button Style 
+.td__primary-btn{
+    background-color: $td__dark-02;
+    padding: 8.5px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: $td__secondary-color;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50.5%;
+        height: 100%;
+        background: $td__primary-color;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50.5%;
+        height: 100%;
+        background: $td__primary-color;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+    }
+    &:hover{
+        &::after,
+        &::before{
+            width: 0;
+        }
+        color: $td__white;
+    }
+}
+// End Primary Button Style 
+
+
+// Start Secondary Button Style 
+.td__secondary-btn{
+    background-color:$td__dark-02;
+    padding: 8.5px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: $td__white;
+    transition: all 0.3s ease-in;
+    &:hover{
+       background-color: $td__primary-color;
+       color: $td__secondary-color;
+
+    }
+}
+// End Secondary Button Style 

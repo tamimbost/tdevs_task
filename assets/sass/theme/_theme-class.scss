@@ -1,0 +1,50 @@
+.scroll-up {
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px #d9d9d9;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    position: fixed;
+    right: 25px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .scroll-up::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Pro";
+    content: "\f062";
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: $td__secondary-color;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .scroll-up svg path {
+    fill: none;
+  }
+  .scroll-up svg.scroll-circle path {
+    stroke: $td__primary-color;
+    stroke-width: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .scroll-up.active-scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  // End Scroll To Top

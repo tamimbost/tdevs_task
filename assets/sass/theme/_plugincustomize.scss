@@ -1,0 +1,121 @@
+// Start Hero Slider Arrow Customize (Swiper Slider)
+.td__hero-slider-next-prev-arrows{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      top: 50%;
+      position: absolute;
+      z-index: 1;
+      left: 74%;
+      transform: translateX(-50%);
+      @include td__screen-1824{
+        width: 45%;
+      }
+      @include td__screen-1745{
+        left:75%;
+      }
+      @include td__screen-1650{
+        left: 76%;
+        width: 43%;
+      }
+      @include td__screen-1550{
+        left: 78%;
+        width: 38%;
+      }
+      @include td__screen-1399{
+        display: none;
+      }
+
+  .td__hero-swiper-button-next,
+  .td__hero-swiper-button-prev{
+    width: 45px;
+    height: 45px;
+    background-color: $td__white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    transition: linear 0.3s;
+    &:hover{
+      background-color: $td__primary-color;
+    }
+  }
+}
+// End Hero Slider Arrow Customize (Swiper Slider)
+
+// Start Hero Slider Bullet Point (Swiper Slider)
+.td__hero-slider-pagination{
+  position: absolute;
+  bottom: 0;
+  left: 75% !important;
+  z-index: 1;
+  @include td__screen-1199{
+    left: 76% !important;
+  }
+  @include td__screen-991{
+    left: 50% !important;
+    width: 100%;
+  }
+  @include td__screen-575{
+    left: 45% !important;
+  }
+}
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $td__white;
+  opacity:1 !important;
+  border: 2px solid transparent;
+  &.swiper-pagination-bullet-active{
+    background: transparent;
+    border: 1px solid $td__white;
+    opacity: 1;
+  }
+}
+// End  Hero Slider Bullet Point (Swiper Slider)
+
+// Start Our Locations Area Slider Arrow 
+.td__slider-round-arrows{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &.td__our-location-item-slider-arrows{
+    @include td__screen-439{
+      position: absolute;
+      bottom: 15px;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .td__slider-round-arrow{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $td__white-02;
+    transition: linear 0.3s;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    &:hover{
+      background-color: $td__secondary-color;
+      span{
+        svg{
+          path{
+            stroke: $td__white;
+          }
+        }
+      }
+    }
+    span{
+      svg{
+        path{
+          transition: linear 0.3s;
+          stroke: $td__secondary-color;
+        }
+      }
+    }
+  }
+}
+// End Our Locations Area Slider Arrow 

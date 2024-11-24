@@ -1,0 +1,77 @@
+// Start Header Sticky Menu Animation
+@keyframes td__headerStickyAnimations {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+// End Header Sticky Menu Animation
+
+// Start Bounce Y Animation
+@keyframes td__bounceY {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(7px) translateX(15px);
+    }
+    to {
+        transform: translateY(0) translateX(0);
+    }
+  }
+// End Bounce Y Animation
+
+// Start Bounce X Animation
+@keyframes td__bounceX {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(15px) translateX(7px);
+    }
+    to {
+        transform: translateY(0) translateX(0);
+    }
+}
+@keyframes td__bounceX1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(15px) translateY(7px);
+    }
+    to {
+        transform: translateX(0) translateY(0);
+    }
+}
+// End Bounce X Animation
+
+// Start Scaling Animation
+@keyframes td__scalingAnimation {
+    0% {
+      scale: 100%;
+    }
+    33.333% {
+      scale: 0.5;
+    }
+    50% {
+      scale: 0.7;
+    }
+    66.666% {
+      scale: 0.9;
+    }
+    100% {
+      scale: 100%;
+    }
+}
+// End Scaling Animation
+
+// Start Roting Animation
+@keyframes td__rotingAnimation{
+	100% {
+			  transform: rotate(360deg);
+	}
+}
+// End Roting Animation

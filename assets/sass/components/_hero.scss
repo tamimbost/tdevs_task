@@ -1,0 +1,221 @@
+.td__hero-area{
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // Start Hero Banner Social Media & Contact
+    .td__social-media-part{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        rotate: -90deg;
+        position: absolute;
+        top: 50%;
+        gap: 63px;
+        left: -9.5%;
+        justify-content: space-between;
+        z-index: 100;
+        @include td__screen-1399{
+            left: -14.5%;
+        }
+        @include td__screen-1199{
+            display: none;
+        }
+        @include td__screen-991{
+            display: flex;
+            top: 20%;
+            gap: 28px;
+        }
+        @include td__screen-767{
+            display: none;
+        }
+        .td__social-media-item{
+            rotate: 90deg;
+            position: relative;
+            top: -31px;
+            left: 32px;
+            ul{
+                li{
+                    margin-bottom: 8px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        color: $td__white;
+                        transition: linear 0.3s;
+                        &:hover{
+                            color: $td__primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .td__hero-agency-contact-item{
+            a{
+                color: $td__white;
+                margin-left: 1px;
+                transition: linear 0.3s;
+                &:hover{
+                    color: $td__primary-color;
+                }
+
+            }
+        }
+    }
+    // End Hero Banner Social Media & Contact
+    .td__hero-wrapper{
+        .td__hero-inner{
+            .td__hero-slider-item{
+                display: flex;
+                align-items: center;
+                @include td__screen-991{
+                    display: block;
+                }
+
+            // Start Hero Text Part Style
+            .td__hero-text-content{
+                position: relative;
+                left: 17%;
+                @include td__screen-1399{
+                    left: 5%;
+                }
+                @include td__screen-1199{
+                    left: 2%;
+                    width: 65%;
+                }
+                @include td__screen-991{
+                    width: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .td__hero-main-title{
+                 font-size: 66px;
+                 font-weight: 700;
+                 color: $td__white;
+                 @include td__screen-1199{
+                    font-size: 42px;
+                    margin-top: 25px;
+                    br{
+                        display: none;
+                    }
+                 }
+                 @include td__screen-991{
+                    font-size: 66px;
+                    text-align: center;
+                 }
+                 @include td__screen-767{
+                    font-size: 45px;
+                 }
+                 @include td__screen-575{
+                    font-size: 38px;
+                 }
+                 .td__hero-main-title-text-color-part{
+                    color: $td__primary-color;
+                }
+                }
+                .td__hero-sub-title{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 0.80);
+                    margin-top: 16px;
+                    @include td__screen-1099{
+                        font-size: 18px;
+                    }
+                    @include td__screen-991{
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    @include td__screen-575{
+                        font-size: 18px;
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .td__hero-button{
+                    margin-top: 37px;
+                    @include td__screen-991{
+                        text-align: center;
+                    }
+                    .td__hero-slider-btn{
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 4px;
+                        padding: 14px 33px;
+                    }
+                }
+                .td__hero-client-info{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    background-color: $td__dark-03;
+                    border-radius: 8px;
+                    max-width: max-content;
+                    margin-top: 45px;
+                    width: 330px;
+                    @include td__screen-439{
+                        display: block;
+                        padding: 20px;
+                    }
+                    @include td__screen-991{
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .td__hero-client-text-content{
+                        position: relative;
+                        left: -32px;
+                        @include td__screen-439{
+                            left: 0;
+                        }
+                        .td__hero-total-client{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: $td__white;
+                            @include td__screen-439{
+                                text-align: center;
+                            }
+                        }
+                        .td__hero-client-simple-title{
+                            font-size: 12px;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .td__hero-client-pictures{
+                        img{
+                            height: 104px;
+                            position: relative;
+                            top: 7px;
+                        }
+                    }
+                 } 
+             }
+             // End Hero Text Part Style
+ 
+             // Start Hero Image Slider Part Style
+             .td__hero-img-slider-wrapper{
+                position: relative;
+                right: -21%;
+                top: 0;
+                width: 54.6%;
+                @include td__screen-1399{
+                    right: -10%;
+                }
+                @include td__screen-1199{
+                    right:0;
+                }
+                @include td__screen-1099{
+                    width: 65%;
+                }
+                @include td__screen-991{
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 35px;
+                }
+             }
+             // End Hero Image Slider Part Style
+            }
+        }
+    }
+}

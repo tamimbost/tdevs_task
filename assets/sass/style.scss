@@ -1,0 +1,33 @@
+/*
+Theme Name: Rosun 
+Author: Mate_Themes
+Author URI: 
+Tags: fashion, ecommerce, furniture-store, store, online-store, html5 template
+Description: Crete - Personal Portfolio HTML5 Template. 
+Version: 1.0.0
+*/
+
+/************************************** base css **************************************/
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "base/typography";
+@import "base/spacing";
+
+/******************************* theme css **********************************/
+@import "theme/theme-class";
+@import "theme/animations";
+@import "theme/plugincustomize";
+@import "theme/wowcustomanimation";
+
+/******************************** components ******************************/
+@import "components/header";
+@import "components/preloader";
+@import "components/buttons";
+@import "components/hero";
+@import "components/_mobile-menu";
+
+
+/****************************** page styles ******************************/
+@import "pages/index-1";
+
